@@ -1,9 +1,11 @@
-//Funciones - Fuction Expression
-//Esta funcion la detecta como una variable y no como una funcion
-//Lo que hace que si tu ejecutas la funcion antes de su declaracion esta no funcionara
-//Ya que javascript la toma como variable
-const sumar =function (numero=0, numero1=0 ){
-    console.log(numero + numero1)
+//Funciones que retornan valores
+//Esta se utilizan para que ese resutaldo que despliega sea entregado a otra funcion
+//Ya que se puede necesitar en otro proceso
+//Para todos tiene que usar 
+const sumar =function (numero1=0, numero2=0 ){
+    return numero1 + numero2
 }
+const resultado = sumar(10,20)
+console.log(resultado)
 sumar(10,20)
 sumar(10,1)
